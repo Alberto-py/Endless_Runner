@@ -1,0 +1,491 @@
+fileFormatVersion: 2
+guid: 7ec27672ea171944bbbe22866aca4adf
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 850
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cabeza
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 2482
+        width: 502
+        height: 501
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26eef457096cf0b409921c9ef330e8df
+      internalID: -260314507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cuerpo
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 1676
+        width: 243
+        height: 558
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44c49ef7280e4fc458aad8f2d3f1358e
+      internalID: -1162611198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antebrazo1
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 2071
+        width: 247
+        height: 207
+      alignment: 9
+      pivot: {x: 0.8266506, y: 0.8292167}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f22386c4722a443bcbdc810f50612d
+      internalID: 1279664340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Antebrazo2
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 2070
+        width: 245
+        height: 208
+      alignment: 9
+      pivot: {x: 0.8266506, y: 0.8292167}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7968a0cf69555b649ab346ff78d6ced7
+      internalID: 839339127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brazo1
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 1651
+        width: 109
+        height: 297
+      alignment: 9
+      pivot: {x: 0.645243, y: 0.8388997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d899bdab45434f749aea587e54bb7d9d
+      internalID: 1388118645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mano1
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 1752
+        width: 164
+        height: 203
+      alignment: 9
+      pivot: {x: 0.3063424, y: 0.7777326}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9446207ef5531a44967a3d75b1f7fbc
+      internalID: 1769920573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Brazo2
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 1651
+        width: 110
+        height: 296
+      alignment: 9
+      pivot: {x: 0.645243, y: 0.8388997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a278b90af2ac4479548fd8fef64c89
+      internalID: -635575483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mano2
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 1753
+        width: 165
+        height: 201
+      alignment: 9
+      pivot: {x: 0.3063424, y: 0.7777326}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e988c179058ff54e99ce6a30793f361
+      internalID: 1713682414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PiernaInferior1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 1193
+        width: 253
+        height: 363
+      alignment: 9
+      pivot: {x: 0.1703909, y: 0.8770649}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa02fe7eae7cd02479f8f05fe3c36ba8
+      internalID: 796007821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PirernaInferior2
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 1193
+        width: 252
+        height: 363
+      alignment: 9
+      pivot: {x: 0.1703909, y: 0.8770649}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d91085938a80974e8ec9b2a71024baa
+      internalID: 2024327730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stick Swordman_10
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 0
+        width: 247
+        height: 1325
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c287562256b00f439754637f6caf5b6
+      internalID: 1523983675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PiernaSuperior1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 707
+        width: 308
+        height: 370
+      alignment: 9
+      pivot: {x: 0.83999, y: 0.8597972}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8890fa649c1a3494cac5a456720210e4
+      internalID: 1834500394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PiernaSuperior2
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 707
+        width: 307
+        height: 371
+      alignment: 9
+      pivot: {x: 0.83999, y: 0.8597972}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef947fd1dd72ae4fbe0a2d6b8d69354
+      internalID: -1343557545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pie1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 385
+        width: 425
+        height: 169
+      alignment: 9
+      pivot: {x: 0.1337949, y: 0.4764917}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2904efca2109a04b9d636813e13eecc
+      internalID: -1766846735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pie2
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 386
+        width: 426
+        height: 168
+      alignment: 9
+      pivot: {x: 0.1337949, y: 0.4764917}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2363f373cab2a7d4fb58fc89bec60dfc
+      internalID: 1808055414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Brazo2: -635575483
+      Pie1: -1766846735
+      PiernaSuperior2: -1343557545
+      Antebrazo2: 839339127
+      Stick Swordman_10: 1523983675
+      Stick Swordman_15: -1340038428
+      Brazo1: 1388118645
+      Cuerpo: -1162611198
+      Antebrazo1: 1279664340
+      Pie2: 1808055414
+      Mano2: 1713682414
+      Mano1: 1769920573
+      PiernaSuperior1: 1834500394
+      PiernaInferior1: 796007821
+      PirernaInferior2: 2024327730
+      Cabeza: -260314507
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
