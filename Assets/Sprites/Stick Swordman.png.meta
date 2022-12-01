@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 850
+  spritePixelsToUnits: 825
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -185,7 +185,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Antebrazo1
+      name: Brazo1
       rect:
         serializedVersion: 2
         x: 588
@@ -206,7 +206,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Antebrazo2
+      name: Brazo2
       rect:
         serializedVersion: 2
         x: 1069
@@ -227,7 +227,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Brazo1
+      name: Antebrazo1
       rect:
         serializedVersion: 2
         x: 543
@@ -269,7 +269,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Brazo2
+      name: Antebrazo2
       rect:
         serializedVersion: 2
         x: 1022
@@ -468,15 +468,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Brazo2: -635575483
+      Brazo2: 839339127
       Pie1: -1766846735
       PiernaSuperior2: -1343557545
-      Antebrazo2: 839339127
+      Antebrazo2: -635575483
       Stick Swordman_10: 1523983675
       Stick Swordman_15: -1340038428
-      Brazo1: 1388118645
+      Brazo1: 1279664340
       Cuerpo: -1162611198
-      Antebrazo1: 1279664340
+      Antebrazo1: 1388118645
       Pie2: 1808055414
       Mano2: 1713682414
       Mano1: 1769920573
