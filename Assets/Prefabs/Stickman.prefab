@@ -42,10 +42,10 @@ GameObject:
   - component: {fileID: 8898659911412066980}
   - component: {fileID: 7282010474977642798}
   - component: {fileID: 7691413310773355060}
+  - component: {fileID: 8233586338574182809}
   - component: {fileID: 319579707}
   - component: {fileID: 319579697}
   - component: {fileID: 319579702}
-  - component: {fileID: 8233586338574182809}
   m_Layer: 0
   m_Name: Stickman
   m_TagString: Untagged
@@ -142,6 +142,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!70 &8233586338574182809
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2655186015602269944}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.21389604, y: -0.59}
+  m_Size: {x: 0.4, y: 2}
+  m_Direction: 0
 --- !u!61 &319579707
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -155,7 +171,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.22597, y: -0.585467}
+  m_Offset: {x: -0.21, y: -1.24}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -166,7 +182,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.388476, y: 1.995863}
+  m_Size: {x: 2, y: 0.7}
   m_EdgeRadius: 0
 --- !u!95 &319579697
 Animator:
@@ -208,19 +224,3 @@ MonoBehaviour:
   dimensionesCaja: {x: 2, y: 0.5, z: 0}
   enSuelo: 0
   velocidadDeMovimiento: 8
---- !u!70 &8233586338574182809
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2655186015602269944}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.21389604, y: -0.59}
-  m_Size: {x: 0.4, y: 2}
-  m_Direction: 0

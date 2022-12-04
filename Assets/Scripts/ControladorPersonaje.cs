@@ -71,7 +71,7 @@ public class ControladorPersonaje : MonoBehaviour
         {
             animator.SetTrigger("Morir");
             GameManager.Instance.ShowGameOverScreen();
-            //Time.timeScale = 0f;
+            Time.timeScale = 0f;
         }
     }
     /*private void Girar()
