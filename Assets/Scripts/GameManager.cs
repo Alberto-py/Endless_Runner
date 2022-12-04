@@ -62,4 +62,9 @@ public class GameManager : MonoBehaviour
         float speedDivider = 10f;
         scrollSpeed = initialScrollSpeed + timer / speedDivider;
     }
+
+    public void home()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
 }
