@@ -7,6 +7,11 @@ public class ControladorPersonaje : MonoBehaviour
 {
     private Rigidbody2D rb2D;
     private Animator animator;
+    private AudioSource audioPlayer;
+
+    public AudioClip jumpAudio;
+    public AudioClip dieAudio;
+    public AudioClip slidingAudio;
 
     [Header("Salto")]
     [SerializeField] private float fuerzaDeSalto;
@@ -19,9 +24,11 @@ public class ControladorPersonaje : MonoBehaviour
     [Header("Movimiento")]
     [SerializeField] private float velocidadDeMovimiento;
 
+
     void Awake()
     {
         animator = GetComponent<Animator>();
+        audioPlayer = GetComponent<AudioSource>();
     }
 
     // Start is called before the first frame update
@@ -41,7 +48,8 @@ public class ControladorPersonaje : MonoBehaviour
             {
                 enSuelo = false;
                 rb2D.velocity = new Vector2(rb2D.velocity.x, fuerzaDeSalto);
-
+                audioPlayer.clip = jumpAudio;
+                audioPlayer.Play();
                 if ((!dobleSalto & !enSuelo))
                 {
                     dobleSalto = true;
@@ -55,6 +63,8 @@ public class ControladorPersonaje : MonoBehaviour
             this.GetComponent<CapsuleCollider2D>().direction = CapsuleDirection2D.Horizontal;
             this.GetComponent<CapsuleCollider2D>().offset = new Vector2(-0.24f, -1.25f);
             this.GetComponent<CapsuleCollider2D>().size = new Vector2(2.19f, 0.6f);
+            audioPlayer.clip = slidingAudio;
+            audioPlayer.Play();
         }
         if ((enSuelo) && (Input.GetKeyUp(KeyCode.DownArrow)))
         {
@@ -92,7 +102,9 @@ public class ControladorPersonaje : MonoBehaviour
             if (animator.GetBool("Morir"))
             {
                 GameManager.Instance.ShowGameOverScreen();
-                
+                Camera.main.GetComponent<AudioSource>().Stop();
+                audioPlayer.clip = dieAudio;
+                audioPlayer.Play();
             }
 
         }

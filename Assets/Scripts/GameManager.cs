@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.Audio;
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
@@ -17,6 +19,7 @@ public class GameManager : MonoBehaviour
     public bool stu = true;
 
     public static GameManager Instance { get; set; }
+    public AudioSource clip;
 
     private void Awake()
     {
@@ -95,5 +98,9 @@ public class GameManager : MonoBehaviour
             record.text = EstadoGame.estadoGame.scoreMax.ToString();
             total.text = score.ToString();
         }
+    }
+    public void OnMouseDown()
+    {
+        clip.Play();
     }
 }
