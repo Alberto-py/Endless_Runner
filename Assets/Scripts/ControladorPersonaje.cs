@@ -63,6 +63,7 @@ public class ControladorPersonaje : MonoBehaviour
             this.GetComponent<CapsuleCollider2D>().offset = new Vector2(-0.213896f, -0.59f);
             this.GetComponent<CapsuleCollider2D>().size = new Vector2(0.4f, 2f);
         }
+        
     }
 
 
@@ -87,11 +88,18 @@ public class ControladorPersonaje : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Obstaculo"))
         {
-            animator.SetTrigger("Morir");
-            GameManager.Instance.ShowGameOverScreen();
-            Time.timeScale = 0f;
+            animator.SetBool("Morir", true);
+            if (animator.GetBool("Morir"))
+            {
+                GameManager.Instance.ShowGameOverScreen();
+                
+            }
+
         }
+
     }
+
+    
     /*private void Girar()
     {
         mirandoDerecha = !mirandoDerecha;
