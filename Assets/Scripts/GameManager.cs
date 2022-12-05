@@ -5,8 +5,11 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameObject gameOverScreen;
+    [SerializeField] private GameObject ocultarScore;
     [SerializeField] private TMP_Text scoreText;
     [SerializeField] private float initialScrollSpeed;
+    [SerializeField] private TMP_Text total;
+    [SerializeField] private TMP_Text record;
 
     private int score;
     private float timer;
@@ -40,6 +43,7 @@ public class GameManager : MonoBehaviour
         gameOverScreen.SetActive(true);
         PersonajeDead();
         stu = false;
+        ocultarScore.SetActive(false);
     }
 
     public void RestartScene()
@@ -79,13 +83,17 @@ public class GameManager : MonoBehaviour
     {
         if (score > EstadoGame.estadoGame.scoreMax)
         {
-            Debug.Log("Score M?xima Superada!!! M?xima: " + EstadoGame.estadoGame.scoreMax + " Actual: " + score);
+            //Debug.Log("Score Maximo Superado!!! Maxima: " + EstadoGame.estadoGame.scoreMax + " Actual: " + score);
             EstadoGame.estadoGame.scoreMax = score;
             EstadoGame.estadoGame.Save();
+            record.text = EstadoGame.estadoGame.scoreMax.ToString();
+            total.text = score.ToString();
         }
         else
         {
-            Debug.Log("Score No Superado!!! M?xima: " + EstadoGame.estadoGame.scoreMax + " Actual: " + score);
+            //Debug.Log("Score No Superado!!! Maxima: " + EstadoGame.estadoGame.scoreMax + " Actual: " + score);
+            record.text = EstadoGame.estadoGame.scoreMax.ToString();
+            total.text = score.ToString();
         }
     }
 }
