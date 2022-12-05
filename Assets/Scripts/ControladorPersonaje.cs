@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ControladorPersonaje : MonoBehaviour
@@ -27,6 +24,7 @@ public class ControladorPersonaje : MonoBehaviour
 
     void Awake()
     {
+        rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         audioPlayer = GetComponent<AudioSource>();
     }
@@ -34,7 +32,7 @@ public class ControladorPersonaje : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rb2D = GetComponent<Rigidbody2D>();
+        
     }
 
     // Update is called once per frame
@@ -110,13 +108,4 @@ public class ControladorPersonaje : MonoBehaviour
         }
 
     }
-
-    
-    /*private void Girar()
-    {
-        mirandoDerecha = !mirandoDerecha;
-        Vector3 escala = transform.localScale;
-        escala.x *= -1;
-        transform.localScale = escala;
-    }*/
 }

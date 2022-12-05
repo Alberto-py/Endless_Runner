@@ -1,8 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
-using UnityEngine.Audio;
-using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
@@ -39,7 +37,6 @@ public class GameManager : MonoBehaviour
         UpdateScore();
         UpdateSpeed();
     }
-
 
     public void ShowGameOverScreen()
     {
