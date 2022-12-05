@@ -49,10 +49,7 @@ public class ControladorPersonaje : MonoBehaviour
                     dobleSalto = true;
                 }
             }
-            animator.SetBool("Agachar", false);
-            this.GetComponent<CapsuleCollider2D>().direction = CapsuleDirection2D.Vertical;
-            this.GetComponent<CapsuleCollider2D>().offset = new Vector2(-0.213896f, -0.59f);
-            this.GetComponent<CapsuleCollider2D>().size = new Vector2(0.4f, 2f);
+            
         }
         if((enSuelo) && (Input.GetKeyDown(KeyCode.DownArrow)))
         {
@@ -61,6 +58,15 @@ public class ControladorPersonaje : MonoBehaviour
             this.GetComponent<CapsuleCollider2D>().offset = new Vector2(-0.24f, -1.25f);
             this.GetComponent<CapsuleCollider2D>().size = new Vector2(2.19f, 0.6f);
         }
+        if ((enSuelo) && (Input.GetKeyUp(KeyCode.DownArrow)))
+        {
+            animator.SetBool("Agachar", false);
+            this.GetComponent<CapsuleCollider2D>().direction = CapsuleDirection2D.Vertical;
+            this.GetComponent<CapsuleCollider2D>().offset = new Vector2(-0.213896f, -0.59f);
+            this.GetComponent<CapsuleCollider2D>().size = new Vector2(0.4f, 2f);
+        }
+            
+        
     }
 
 
