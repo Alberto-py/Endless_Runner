@@ -33,9 +33,7 @@ public class ControladorPersonaje : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         rb2D.velocity = new Vector2(velocidadDeMovimiento, rb2D.velocity.y);
-        //NotificationCenter.DefaultCenter().PostNotification(this, "PersonajeEmpiezaACorrer");
 
         if ((enSuelo || !dobleSalto) && (Input.GetButtonDown("Jump") || Input.GetMouseButtonDown(0) || (Input.GetKeyDown(KeyCode.UpArrow))))
         {
@@ -43,14 +41,14 @@ public class ControladorPersonaje : MonoBehaviour
             {
                 enSuelo = false;
                 rb2D.velocity = new Vector2(rb2D.velocity.x, fuerzaDeSalto);
-                //rb2D.AddForce(new Vector2(0f, fuerzaDeSalto));
+
                 if ((!dobleSalto & !enSuelo))
                 {
                     dobleSalto = true;
                 }
             }
-            
         }
+
         if((enSuelo) && (Input.GetKeyDown(KeyCode.DownArrow)))
         {
             animator.SetBool("Agachar", true);
@@ -65,8 +63,6 @@ public class ControladorPersonaje : MonoBehaviour
             this.GetComponent<CapsuleCollider2D>().offset = new Vector2(-0.213896f, -0.59f);
             this.GetComponent<CapsuleCollider2D>().size = new Vector2(0.4f, 2f);
         }
-            
-        
     }
 
 

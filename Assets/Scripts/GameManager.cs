@@ -36,6 +36,7 @@ public class GameManager : MonoBehaviour
     public void ShowGameOverScreen()
     {
         gameOverScreen.SetActive(true);
+        PersonajeDead();
     }
 
     public void RestartScene()
@@ -66,5 +67,19 @@ public class GameManager : MonoBehaviour
     public void home()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
+
+    public void PersonajeDead()
+    {
+        if (score > EstadoGame.estadoGame.scoreMax)
+        {
+            Debug.Log("Score Máxima Superada!!! Máxima: " + EstadoGame.estadoGame.scoreMax + " Actual: " + score);
+            EstadoGame.estadoGame.scoreMax = score;
+            EstadoGame.estadoGame.Save();
+        }
+        else
+        {
+            Debug.Log("Score No Superado!!! Máxima: " + EstadoGame.estadoGame.scoreMax + " Actual: " + score);
+        }
     }
 }
