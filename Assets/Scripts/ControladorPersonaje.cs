@@ -37,7 +37,7 @@ public class ControladorPersonaje : MonoBehaviour
 
         if ((enSuelo || !dobleSalto) && (Input.GetButtonDown("Jump") || Input.GetMouseButtonDown(0) || (Input.GetKeyDown(KeyCode.UpArrow))))
         {
-            if(!animator.GetBool("Agachar"))
+            if(!animator.GetBool("Agachar") && !animator.GetBool("Morir"))
             {
                 enSuelo = false;
                 rb2D.velocity = new Vector2(rb2D.velocity.x, fuerzaDeSalto);
@@ -49,7 +49,7 @@ public class ControladorPersonaje : MonoBehaviour
             }
         }
 
-        if((enSuelo) && (Input.GetKeyDown(KeyCode.DownArrow)))
+        if((enSuelo) && (Input.GetKeyDown(KeyCode.DownArrow)) && !animator.GetBool("Morir"))
         {
             animator.SetBool("Agachar", true);
             this.GetComponent<CapsuleCollider2D>().direction = CapsuleDirection2D.Horizontal;
